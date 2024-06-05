@@ -1,2 +1,5 @@
-# hello-world
-I am new here,nice to meet you.
+# jane-component
+
+## 技术栈
+
+rollup + react + ts + less

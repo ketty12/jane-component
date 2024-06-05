@@ -1,0 +1,11 @@
+{
+  "name": "jane-component",
+  "version": "0.0.1",
+  "description": "自己学习的组件库",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ketty12",
+  "license": "ISC"
+}
