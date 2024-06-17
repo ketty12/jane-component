@@ -1,0 +1,21 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        // 不转换模块类型，仍然使用 ES Module，方便构建工具 tree shaking
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-external-helpers", // 把 helpers 收集到一个共享模块或共享文件
+    [
+      "@babel/plugin-transform-runtime", //依赖@babel/runtime 生产依赖
+      {
+        "corejs": 3, //配置安装 @babel/runtime-corejs3 生产依赖
+        "useESModules": true //不转换esm的代码，让其支持tree-shaking。交给rollup去转换esm。
+      }
+    ]
+  ]
+}

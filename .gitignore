@@ -1,6 +1,8 @@
 # .gitignore
 node_modules
+dist
 packages/*/lib
 packages/*/legacy/dist
 .vscode
 .DS_Store
+
