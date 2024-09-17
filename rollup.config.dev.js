@@ -47,9 +47,7 @@ export default {
       modules: true // 可以使用 import style from "./style.less"
     }),
     commonjs(),
-    nodeResolve({
-      extensions: ['.ts', '.tsx']
-    }),
+    nodeResolve(),
     typescript(),
     babel({
       exclude: 'node_modules/**', // 只编译源代码，忽略第三方代码

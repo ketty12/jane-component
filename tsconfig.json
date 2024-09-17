@@ -20,7 +20,7 @@
         "lib": ["esnext", "dom"], // 导入库类型定义
         "types": ["node"] // 导入指定类型包
     },
-    // 注意：运行npm run dev时候加上 "examples" ，运行npm run build:pro的时候去掉他
+    // 注意：运行npm run dev时候加上 "examples" ，运行npm run build:pro的时候去掉他,否则会报错
     "include": ["packages", "typings.d.ts", "examples"],
     "exclude": ["node_modules"]
 }

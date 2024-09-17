@@ -1,14 +1,23 @@
 import React from 'react';
-import { Button } from '../lib/es';
+import { Button, MessageManager, addMessage } from '../lib/es';
 import styles from './style.less';
 
 export default function App() {
+  const handleClick = (type: string) => {
+    addMessage({ type, content: `This is a ${type} message` });
+  };
+
   return (
     <div className={styles.app}>
-      <header className="App-header">header</header>
-      <Button type="primary">notice</Button>
-      <Button>happy</Button>
-      <Button type="danger">warn</Button>
+      <header>header</header>
+      <Button type="primary" onClick={() => handleClick('success')}>
+        notice
+      </Button>
+      <Button onClick={() => handleClick('info')}>happy</Button>
+      <Button type="danger" onClick={() => handleClick('error')}>
+        warn
+      </Button>
+      <MessageManager />
     </div>
   );
 }

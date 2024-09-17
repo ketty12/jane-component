@@ -7,8 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:pro": "rollup -c",
-    "dev": "rollup -wc rollup.config.dev.js" ,
-    "prepare": "husky install"
+    "dev": "rollup -wc rollup.config.dev.js"
   },
   "lint-staged": {
     "**/**.{js,jsx,json,ts,tsx}": [
@@ -42,8 +41,6 @@
     "cssnano": "^7.0.2",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.2",
-    "globals": "^15.5.0",
-    "husky": "^9.0.11",
     "less": "^4.2.0",
     "lint-staged": "^15.2.7",
     "postcss": "^8.4.38",

@@ -1,0 +1,99 @@
+@import '../../style/var.less';
+.message-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+}
+.j-message {
+  width: auto;
+  max-width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  z-index: 9999;
+  // -webkit-animation-name: fade;
+  // -webkit-animation-duration: 1.5s;
+  // animation-name: fade;
+  // animation-duration: 1.5s;
+  // ease-in 1s 2
+  animation:
+    fade-in 1s reverse,
+    fade-out 1s reverse;
+
+  &-info {
+    background: rgba(@primary, 0.3);
+    color: @primary;
+    border-color: @primary;
+  }
+  &-success {
+    background: rgba(@success, 0.3);
+    color: @success;
+    border-color: @success;
+  }
+  &-warn {
+    background: rgba(@warn, 0.3);
+    color: @warn;
+    border-color: @warn;
+  }
+  &-error {
+    background: rgba(@danger, 0.3);
+    color: @danger;
+    border-color: @danger;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// 这里渐出效果没有体现
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}

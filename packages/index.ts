@@ -1,5 +1,4 @@
 import Button from './Button/Button';
+import MessageManager, { addMessage } from './Message/MessageManager';
 
-const count = (x: number, y: number) => x + y;
-
-export { Button, count };
+export { Button, MessageManager, addMessage };

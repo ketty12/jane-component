@@ -53,9 +53,7 @@ export default {
       plugins: [autoprefixer(), cssnanoPlugin()]
     }),
     commonjs(),
-    nodeResolve({
-      extensions: ['.ts', '.tsx']
-    }),
+    nodeResolve(),
     typescript(),
     babel({
       exclude: 'node_modules/**', // 只编译源代码，忽略第三方代码

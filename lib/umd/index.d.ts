@@ -1,3 +1,3 @@
 import Button from './Button/Button';
-declare const count: (x: number, y: number) => number;
-export { Button, count };
+import MessageManager, { addMessage } from './Message/MessageManager';
+export { Button, MessageManager, addMessage };
